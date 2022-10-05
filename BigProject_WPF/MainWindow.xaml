@@ -1,0 +1,56 @@
+﻿<Window x:Class="BigProject_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BigProject_WPF"
+        Height="920" Width="1280" WindowStartupLocation="CenterScreen"
+         WindowState="Normal" Background="Transparent" WindowStyle="None">
+    <Border Background="White" CornerRadius="50">
+        <Grid>
+            <!--Chia Cột-->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="220"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="220"/>
+            </Grid.ColumnDefinitions>
+
+            <!--Chia Hàng-->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+
+            <!--Set Color Main Form-->
+            <Border Grid.Column="1" Grid.Row="1" Background="Cyan" CornerRadius="50">
+
+            </Border>
+            <Border Grid.Column="0" Grid.Row="1">
+                <!--<Image Source="/Imgage/logo.png" Width="20" Height="20"/>-->
+                <TextBlock Text="Main Shop" Style="{StaticResource ResourceKey=TextMain}"/>
+                <!--Set buttun-->
+            </Border>
+            <Border Grid.Column="0" Grid.Row="1">
+                <Button Style="{StaticResource Home_Main}">
+                    <!--<Image/>-->
+                    <TextBox Text="Trang Chủ" Style="{StaticResource ResourceKey=Text_Main}"/>
+                </Button>
+            </Border>
+            <Border Grid.Column="0" Grid.Row="1">
+                <Button Style="{StaticResource Oder_Main}" >
+                    <!--<Image/>-->
+                    <TextBox Text="Don Hang" Style="{StaticResource ResourceKey=Text_Main}"/>
+                </Button>
+            </Border>
+            <Border Grid.Column="0" Grid.Row="1">
+                <Button Style="{StaticResource Product_Main}" >
+                    <!--<Image/>-->
+                    <TextBox Text="San Pham" Style="{StaticResource ResourceKey=Text_Main}"/>
+                </Button>
+            </Border>
+
+
+        </Grid>
+    </Border>
+</Window>
